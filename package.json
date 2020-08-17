@@ -1,0 +1,24 @@
+{
+  "name": "he4rt-web-spotify-theme",
+  "version": "1.0.0",
+  "description": "Web Spotify theme for He4rt",
+  "main": "index.js",
+  "repository": "git@github.com:aleDsz/he4rt-web-spotify-theme.git",
+  "author": "Alexandre de Souza <alexandre@aledsz.com.br>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "fs": "^0.0.1-security",
+    "raw-loader": "^4.0.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-userscript": "^2.5.5"
+  }
+}
