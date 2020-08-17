@@ -1,0 +1,82 @@
+:root {
+  --main_fg: #9DB6E0;
+  --main_bg: #383E56;
+  --secondary_fg: #EFBBCF;
+  --secondary_bg: #474A60;
+  --selected_button: #F9CEC3;
+  --pressing_fg: #B877DB;
+  --pressing_button_fg: #F09383;
+  --pressing_button_bg: #B877DB;
+  --sidebar_and_player_bg: #383E56;
+  --sidebar_indicator_and_hover_button_bg: #6C6F93;
+  --cover_overlay_and_shadow: #FAC29A;
+  --slider_bg: #2E303E;
+  --scrollbar_fg_and_selected_row_bg: #1A1C23;
+  --active_control_fg: #B877DB;
+  --indicator_fg_and_button_bg: #52599E;
+  --miscellaneous_bg: #6C6F93;
+  --miscellaneous_hover_bg: #F9CEC3;
+  --preserve_1: #F9CEC3;
+}
+
+#main {
+  background: url(https://raw.githubusercontent.com/aleDsz/he4rt-spicetify-theme/master/assets/glue-resources/images/wallpaper.png) !important;
+}
+
+.Root__top-container {
+  background: rgba(0, 0, 0, 0.8) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.Root__main-view {
+  background: transparent !important;
+  z-index: 0;
+}
+
+.Root__main-view .main-view-container__scroll-node-child {
+  margin-bottom: 115px !important;
+}
+
+.Root__main-view .main-view-container__scroll-node-child
+  section > div > div[class^='_']:not(:nth-child(1)) {
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: #9DB6E0 !important;
+}
+
+.Rootlist {
+  margin-top: 0px;
+}
+
+.Root__nav-bar {
+  background: transparent !important;
+  height: calc(100% + 115px);
+  width: 232px;
+}
+
+.Root__now-playing-bar {
+  width: calc(100% - 232px);
+  margin-left: 232px;
+  background: transparent !important;
+  grid-area: none !important;
+  position: absolute !important;
+  bottom: 0 !important;
+}
+
+.Root__now-playing-bar .now-playing-bar-container {
+  background: rgba(0, 0, 0, 0.8) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* Removed elements */
+.Rootlist__playlists-header,
+.GlueDropTarget--tracks,
+.Root__nav-bar div[role="banner"],
+.Root__nav-bar nav > div:not(.Rootlist),
+footer.now-playing-bar-container > div:not(.now-playing-bar),
+.Rootlist__divider {
+  display: none;
+}
+
+ /* .Root__nav-bar .RootlistItemPlaylist__text-wrapper */
